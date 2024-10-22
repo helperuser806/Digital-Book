@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Book</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section id="collection">
+            <h2>Book Collection</h2>
+            <div id="filters">
+                <label for="genre">Genre:</label>
+                <select id="genre">
+                    <option value="all">All</option>
+                    <option value="science fiction">Science Fiction</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                </select>
+                
+                <label for="availability">Availability:</label>
+                <select id="availability">
+                    <option value="all">All</option>
+                    <option value="physical">Physical</option>
+                    <option value="digital">Digital</option>
+                </select>
+                
+                <button onclick="filterBooks()">Filter</button>
+            </div>
+            <div id="books">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Address: Carrera 43A, Cl. 7 Sur #170, </p>
+        <p>Opening Hours: Monday to Friday from 9:00 AM to 6:00 PM</p>
+        <p>Contact: yourquery@digitalbook.com | Tel: +604 576 17 73</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
